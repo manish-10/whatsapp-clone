@@ -1,12 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from './Sidebar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Lets us create whatsapp web</h1>
+    <div className="app">
+      
       <div className="app__body">
-        
+        <Sidebar/>
       </div>
     </div>
   );
