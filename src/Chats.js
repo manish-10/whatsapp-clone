@@ -4,7 +4,9 @@ import { useEffect, useState } from 'react'
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import MicIcon from '@material-ui/icons/Mic';
 import './Chats.css'
+import { useParams } from 'react-router';
 function Chat() {
+    const {roomId}=useParams();
     const [seed, setSeed] = useState('')
     const[input,setInput]=useState('')
     useEffect(() => {
